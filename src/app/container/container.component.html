@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <div class="custom-control-inline custom-switch">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="customSwitch1"
+          checked
+          (change)="isListen = !isListen"
+        />
+        <label class="custom-control-label" for="customSwitch1"
+          >Listen Event</label
+        >
+      </div>
+      <button class="btn btn-primary m-4" (click)="createBox()" type="submit">
+        Create Box
+      </button>
+      <button
+        class="btn btn-primary m-4"
+        (click)="boxIds = []; id = 0"
+        type="submit"
+      >
+        Clear
+      </button>
+    </div>
+  </div>
+  <div
+    *ngFor="let boxId of boxIds"
+    [ngClass]="{ 'selected-box': selectedBoxId == boxId }"
+    class="box m-4"
+    (click)="onBoxClick($event)"
+    [id]="boxId"
+  >
+    {{ boxId }}
+  </div>
+  <!-- <button (click)="onClick($event)" id="test">Click</button> -->
+</div>
