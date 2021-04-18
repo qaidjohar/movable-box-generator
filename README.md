@@ -12,4 +12,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Live URL 
 
-Kindly check the working URL at [https://qaidjohar.github.io/movable-box-generator](https://qaidjohar.github.io/movable-box-generator)`https://qaidjohar.github.io/movable-box-generator/`.
+Kindly check the working URL at [https://qaidjohar.github.io/movable-box-generator](https://qaidjohar.github.io/movable-box-generator).
